@@ -1,0 +1,15 @@
+.left-text {
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  padding-top: 10%;
+  /* justify-content: center; */
+}
+.left-text h1 {
+  font-size: 100px;
+  margin-left: -5px;
+}
+#learn {
+  margin-left: 1%;
+}

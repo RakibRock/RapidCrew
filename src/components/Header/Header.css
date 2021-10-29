@@ -1,6 +1,10 @@
-.nav {
-  margin-left: -150px;
+.navigation {
+  margin-left: 65%;
 }
+.nav {
+  margin-left: 5%;
+}
+/*
 .nav-bar {
   background-color: #4c9a2a;
   padding: 10px;
@@ -11,24 +15,29 @@
   font-size: 40px;
   display: contents;
 }
-
-.navigation a {
-  color: #a4de02;
-  font-size: 20px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  margin-left: 20px;
-  font-weight: 400;
-}
 .navigation {
   align-self: center;
   padding-top: 10px;
+}*/
+.navigation a {
+  color: #a4de02;
+  font-size: 18px;
+  text-decoration: none;
+  /* margin-left: 20px; */
+  font-weight: 400;
 }
+
 .rapid {
   color: #a4de02;
   font-weight: 600;
+  font-size: 30px;
 }
 .crew {
   color: #a4de02;
   font-weight: 300;
+  font-size: 30px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
 }

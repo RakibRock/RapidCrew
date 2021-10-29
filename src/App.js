@@ -6,6 +6,7 @@ import NotFound from "./components/NotFound/NotFound";
 import Services from "./components/Services/Services";
 import Register from "./components/Register/Register";
 import Login from "./components/Login/Login";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (

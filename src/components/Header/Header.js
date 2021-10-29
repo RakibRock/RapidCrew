@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className="container-fluid">
       <div className="row">
-        <div className="col-md-12 ">
+        <div className="col ">
           <Navbar
             collapseOnSelect
             expand="lg"
@@ -15,29 +15,31 @@ const Header = () => {
             variant="dark"
             className="nav-bar"
           >
-            <Container>
-              <Navbar.Brand className="nav" to="/">
-                <span className="rapid">Rapid</span>
-                <span className="crew">Crew</span>
-              </Navbar.Brand>
+            <Navbar.Brand className="nav" to="/">
+              <span className="rapid">Rapid</span>
+              <span className="crew">Crew</span>
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+              <Nav className="navigation">
+                <Nav.Link as={NavLink} to="/home">
+                  Home
+                </Nav.Link>
+                <Nav.Link as={NavLink} to="/services">
+                  Services
+                </Nav.Link>
+                <button>Sign in</button>
 
-              <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="navigation">
-                  <Nav.Link as={NavLink} to="/home">
-                    Home
-                  </Nav.Link>
-                  <Nav.Link as={NavLink} to="/services">
-                    Services
-                  </Nav.Link>
-
-                  <Nav.Link as={NavLink} to="/register">
-                    Register
-                  </Nav.Link>
+                {
+                  /* <Nav.Link as={NavLink} to="/register">
+                  Register
+                </Nav.Link>*/
                   <Nav.Link as={NavLink} to="/login">
                     Login
                   </Nav.Link>
-                  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                  {/* {user.email ? (
+                }
+
+                {/* {user.email ? (
                     <Nav.Link
                       className="text-white"
                       as={NavLink}
@@ -51,9 +53,8 @@ const Header = () => {
                       LogIn
                     </Nav.Link>
                   )} */}
-                </Nav>
-              </Navbar.Collapse>
-            </Container>
+              </Nav>
+            </Navbar.Collapse>
           </Navbar>
         </div>
       </div>
