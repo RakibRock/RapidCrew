@@ -7,6 +7,10 @@ const Hero = () => {
     width: "auto",
     marginTop: "-5%",
   };
+
+  const handleLogin = () => {
+    console.log("clicked");
+  };
   return (
     <div>
       <div className="container">
@@ -16,7 +20,7 @@ const Hero = () => {
             <h3>Fast & Secure</h3>
             <p>We are the fastest delivery crew in the country!</p>
             <div>
-              <button>Place Order Now!</button>
+              <button onClick={handleLogin}>Place Order Now!</button>
               <button id="learn">Learn More</button>
             </div>
           </div>

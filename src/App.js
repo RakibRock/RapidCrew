@@ -1,12 +1,13 @@
 import "./App.css";
 import Header from "./components/Header/Header";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./components/Home/Home";
-import NotFound from "./components/NotFound/NotFound";
-import Services from "./components/Services/Services";
-import Register from "./components/Register/Register";
-import Login from "./components/Login/Login";
+
 import "bootstrap/dist/css/bootstrap.min.css";
+import Home from "./Pages/Home/Home";
+import Services from "./components/Services/Services";
+import Register from "./Pages/Register/Register";
+import Login from "./Pages/Login/Login";
+import NotFound from "./Pages/NotFound/NotFound";
 
 function App() {
   return (
