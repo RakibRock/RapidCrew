@@ -1,0 +1,34 @@
+.nav {
+  margin-left: -150px;
+}
+.nav-bar {
+  background-color: #4c9a2a;
+  padding: 10px;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 40px;
+  display: contents;
+}
+
+.navigation a {
+  color: #a4de02;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 400;
+}
+.navigation {
+  align-self: center;
+  padding-top: 10px;
+}
+.rapid {
+  color: #a4de02;
+  font-weight: 600;
+}
+.crew {
+  color: #a4de02;
+  font-weight: 300;
+}
