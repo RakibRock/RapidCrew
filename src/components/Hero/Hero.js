@@ -1,4 +1,7 @@
-import React from "react";
+import Button from "@restart/ui/esm/Button";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import MyVerticallyCenteredModal from "../Modal/Modal";
 import "./Hero.css";
 
 const Hero = () => {
@@ -8,9 +11,9 @@ const Hero = () => {
     marginTop: "-5%",
   };
 
-  const handleLogin = () => {
-    console.log("clicked");
-  };
+  //modal
+  const [modalShow, setModalShow] = useState(false);
+
   return (
     <div>
       <div className="container">
@@ -20,8 +23,22 @@ const Hero = () => {
             <h3>Fast & Secure</h3>
             <p>We are the fastest delivery crew in the country!</p>
             <div>
-              <button onClick={handleLogin}>Place Order Now!</button>
-              <button id="learn">Learn More</button>
+              <Button className="btn-google" onClick={() => setModalShow(true)}>
+                Place Order Now!
+              </Button>
+
+              <MyVerticallyCenteredModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+              />
+
+              {/* <button className="btn-google">Place Order Now!</button> */}
+
+              {/* modal */}
+
+              <button className="btn-google" id="learn">
+                Learn More
+              </button>
             </div>
           </div>
           <div className="col-6 right-img">

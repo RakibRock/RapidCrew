@@ -1,18 +1,22 @@
 import React from "react";
 import "./Header.css";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
 
 const Header = () => {
+  const { signInUsingGoogle, user, logOut } = useAuth();
+  console.log(user.email);
+
   return (
-    <div className="container-fluid">
+    <div className="container">
       <div className="row">
         <div className="col ">
           <Navbar
             collapseOnSelect
             expand="lg"
-            bg="dark"
-            variant="dark"
+            bg=""
+            variant=""
             className="nav-bar"
           >
             <Navbar.Brand className="nav" to="/">
@@ -28,31 +32,15 @@ const Header = () => {
                 <Nav.Link as={NavLink} to="/services">
                   Services
                 </Nav.Link>
-                <button>Sign in</button>
-
-                {
-                  /* <Nav.Link as={NavLink} to="/register">
-                  Register
-                </Nav.Link>*/
-                  <Nav.Link as={NavLink} to="/login">
-                    Login
+                {user.email ? (
+                  <Nav.Link className="" as={NavLink} to="" onClick={logOut}>
+                    <span className="text">{user.displayName}</span> Log Out
                   </Nav.Link>
-                }
-
-                {/* {user.email ? (
-                    <Nav.Link
-                      className="text-white"
-                      as={NavLink}
-                      to=""
-                      onClick={logOut}
-                    >
-                      <span>{user.displayName}</span> LogOut
-                    </Nav.Link>
-                  ) : (
-                    <Nav.Link as={NavLink} to="/register">
-                      LogIn
-                    </Nav.Link>
-                  )} */}
+                ) : (
+                  <button className="btn-google " onClick={signInUsingGoogle}>
+                    Google Sign In
+                  </button>
+                )}{" "}
               </Nav>
             </Navbar.Collapse>
           </Navbar>

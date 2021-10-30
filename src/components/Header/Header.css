@@ -1,8 +1,9 @@
 .navigation {
-  margin-left: 65%;
+  margin-left: 55%;
 }
-.nav {
-  margin-left: 5%;
+.navbar-brand {
+}
+.navbar {
 }
 /*
 .nav-bar {
@@ -21,23 +22,40 @@
 }*/
 .navigation a {
   color: #a4de02;
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: none;
   /* margin-left: 20px; */
   font-weight: 400;
 }
 
+.navigation > .btn-google {
+  margin-left: 5px;
+}
+
 .rapid {
   color: #a4de02;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 40px;
 }
 .crew {
   color: #a4de02;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 40px;
 }
-.container {
+.navbar {
   display: flex;
   justify-content: space-between;
+}
+.btn-google {
+  background-color: #a4de02;
+  border: none;
+  border-radius: 7px;
+  font-weight: 500;
+  padding: 5px 20px;
+}
+.text {
+  color: white;
+  background-color: #a4de02;
+  padding: 5px 10px;
+  border-radius: 7px;
 }

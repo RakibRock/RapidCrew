@@ -1,0 +1,12 @@
+.login-form {
+  background-color: #a4de02;
+  padding: 50px 300px;
+}
+.btn-google-login {
+  border: none;
+  margin-top: 5%;
+  padding: 10px 30px;
+  border-radius: 7px;
+  font-weight: 500;
+  font-size: 18px;
+}
