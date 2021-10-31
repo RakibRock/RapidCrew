@@ -1,0 +1,12 @@
+.banner {
+  background-color: #a4de02;
+  padding: 50px;
+  margin-bottom: 100px;
+}
+.banner > .col-md-3 {
+  background-color: #d1f177;
+  margin-left: 10px;
+  border-radius: 7px;
+  padding: 20px;
+  color: #5e8003;
+}

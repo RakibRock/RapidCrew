@@ -9,7 +9,7 @@ const Header = () => {
   console.log(user.email);
 
   return (
-    <div className="container">
+    <div className="container-fluid">
       <div className="row">
         <div className="col ">
           <Navbar
@@ -23,15 +23,39 @@ const Header = () => {
               <span className="rapid">Rapid</span>
               <span className="crew">Crew</span>
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="navigation">
+            <div className="left-navigate">
+              <Nav className="navigate">
                 <Nav.Link as={NavLink} to="/home">
                   Home
                 </Nav.Link>
                 <Nav.Link as={NavLink} to="/services">
                   Services
                 </Nav.Link>
+                {/* <Nav.Link as={NavLink} to="/ourProcess">
+                  Our Process
+                </Nav.Link> */}
+
+                <Nav.Link className="" as={NavLink} to="/myOrders">
+                  My Orders
+                </Nav.Link>
+
+                <Nav.Link className="" as={NavLink} to="/manageOrders">
+                  Manage Orders
+                </Nav.Link>
+
+                {user.email ? (
+                  <Nav.Link className="" as={NavLink} to="/addService">
+                    Add Service
+                  </Nav.Link>
+                ) : (
+                  <p></p>
+                )}
+              </Nav>
+            </div>
+
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+              <Nav className="navigation">
                 {user.email ? (
                   <Nav.Link className="" as={NavLink} to="" onClick={logOut}>
                     <span className="text">{user.displayName}</span> Log Out

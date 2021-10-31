@@ -1,3 +1,10 @@
 .modal-header-footer {
   background-color: #a4de02;
 }
+.btn-cl {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 7px;
+  font-weight: 500;
+  padding: 5px 20px;
+}

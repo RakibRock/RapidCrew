@@ -9,6 +9,11 @@ import Register from "./Pages/Register/Register";
 import Login from "./Pages/Login/Login";
 import NotFound from "./Pages/NotFound/NotFound";
 import AuthProvider from "./contexts/AuthProvider";
+import OurProcess from "./Pages/OurProcess/OurProcess";
+import MyOrders from "./Pages/Login/PrivateRoutes/MyOrders/MyOrders";
+import ManageOrders from "./Pages/Login/PrivateRoutes/ManageOrders/ManageOrders";
+import AddService from "./Pages/Login/PrivateRoutes/AddService/AddService";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 
 function App() {
   return (
@@ -29,6 +34,22 @@ function App() {
             <Route path="/register">
               <Register></Register>
             </Route>
+
+            <Route path="/ourProcess">
+              <OurProcess></OurProcess>
+            </Route>
+
+            <PrivateRoute path="/myOrders">
+              <MyOrders></MyOrders>
+            </PrivateRoute>
+
+            <Route path="/manageOrders">
+              <ManageOrders></ManageOrders>
+            </Route>
+            <Route path="/addService">
+              <AddService></AddService>
+            </Route>
+
             <Route path="/login">
               <Login></Login>
             </Route>

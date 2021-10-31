@@ -1,5 +1,6 @@
 import Button from "@restart/ui/esm/Button";
 import { Modal } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import "./Modal.css";
 
@@ -28,11 +29,18 @@ const MyVerticallyCenteredModal = (props) => {
                 <p>Please Sign In to continue</p>
               )}
               {user.email ? (
-                <h3>Hello {user.displayName}, you have been logged in.</h3>
+                <h3>Hello, {user.displayName}.</h3>
               ) : (
                 <button className="btn-google " onClick={signInUsingGoogle}>
                   Google Sign In
                 </button>
+              )}
+              {user.email ? (
+                <Link to="/services">
+                  <button className="btn-google">View Services</button>
+                </Link>
+              ) : (
+                <p></p>
               )}
             </div>
           </div>
@@ -40,7 +48,9 @@ const MyVerticallyCenteredModal = (props) => {
       </Modal.Body>
       <Modal.Footer className="modal-header-footer">
         <h5>We are the fastest courier delivery service in Bangladesh</h5>
-        <Button onClick={props.onHide}>Close</Button>
+        <Button className="btn-cl" onClick={props.onHide}>
+          Close
+        </Button>
       </Modal.Footer>
     </Modal>
   );

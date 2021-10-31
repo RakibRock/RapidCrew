@@ -1,9 +1,29 @@
 .navigation {
-  margin-left: 55%;
+  margin-left: 40%;
+  padding-top: 5px;
 }
 .navbar-brand {
+  margin-left: 5%;
 }
-.navbar {
+.navigate a {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 400;
+
+  margin-left: 2px;
+  border-radius: 7px;
+}
+.navigate {
+}
+.navigate a:hover {
+  background-color: rgb(193, 236, 124);
+  border-radius: 7px;
+  color: black;
+  font-weight: 500;
+}
+.left-navigate {
+  padding-top: 5px;
 }
 /*
 .nav-bar {

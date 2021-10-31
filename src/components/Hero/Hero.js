@@ -16,12 +16,16 @@ const Hero = () => {
 
   return (
     <div>
-      <div className="container">
-        <div className="row">
+      <div className="container-fluid bg-color">
+        <div className="row pad">
           <div className="col-6 left-text">
-            <h1>RapidCrew</h1>
-            <h3>Fast & Secure</h3>
-            <p>We are the fastest delivery crew in the country!</p>
+            <h1 className="brand-name">
+              Rapid<span id="brand-crew">Crew</span>
+            </h1>
+            <h3 className="brand-name">Fast & Secure</h3>
+            <p className="brand-name">
+              We are the fastest delivery crew in the country!
+            </p>
             <div>
               <Button className="btn-google" onClick={() => setModalShow(true)}>
                 Place Order Now!
@@ -36,9 +40,9 @@ const Hero = () => {
 
               {/* modal */}
 
-              <button className="btn-google" id="learn">
+              <a href="#s" className="btn-google" id="learn">
                 Learn More
-              </button>
+              </a>
             </div>
           </div>
           <div className="col-6 right-img">
