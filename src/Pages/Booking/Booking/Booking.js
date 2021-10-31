@@ -16,7 +16,7 @@ const Booking = () => {
       .then((data) => setService(data));
   }, []);
 
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => console.log(data);
 
   return (
