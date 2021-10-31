@@ -16,6 +16,7 @@ import AddService from "./Pages/Login/PrivateRoutes/AddService/AddService";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import OrderReview from "./components/PrivateRoute/OrderReview/OrderReview";
 import Booking from "./Pages/Booking/Booking/Booking";
+import ManageServices from "./Pages/ManageServices/ManageServices";
 
 function App() {
   return (
@@ -45,9 +46,9 @@ function App() {
               <MyOrders></MyOrders>
             </PrivateRoute>
 
-            <PrivateRoute path="/manageOrders">
-              <ManageOrders></ManageOrders>
-            </PrivateRoute>
+            <Route path="/manageServices">
+              <ManageServices></ManageServices>
+            </Route>
 
             <PrivateRoute path="/orderReview">
               <OrderReview></OrderReview>

@@ -10,3 +10,9 @@
   padding: 20px;
   color: #5e8003;
 }
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .banner > .col-md-3 {
+    margin-top: 10px;
+  }
+}

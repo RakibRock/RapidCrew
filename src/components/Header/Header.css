@@ -1,5 +1,5 @@
 .navigation {
-  margin-left: 40%;
+  margin-left: 10%;
   padding-top: 5px;
 }
 .navbar-brand {
@@ -57,6 +57,7 @@
   font-weight: 600;
   font-size: 40px;
 }
+
 .crew {
   color: #a4de02;
   font-weight: 300;

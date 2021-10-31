@@ -18,7 +18,7 @@ const Hero = () => {
     <div>
       <div className="container-fluid bg-color">
         <div className="row pad">
-          <div className="col-6 left-text">
+          <div className="col-md-6 left-text">
             <h1 className="brand-name">
               Rapid<span id="brand-crew">Crew</span>
             </h1>
@@ -45,7 +45,7 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div className="col-6 right-img">
+          <div className="col-md-6 right-img">
             <img
               style={imgStyle}
               className="img-fluid"

@@ -16,61 +16,59 @@ const Header = () => {
             collapseOnSelect
             expand="lg"
             bg=""
-            variant=""
+            variant="light"
             className="nav-bar"
           >
             <Navbar.Brand className="nav" to="/">
               <span className="rapid">Rapid</span>
               <span className="crew">Crew</span>
             </Navbar.Brand>
-            <div className="left-navigate">
-              <Nav className="navigate">
-                <Nav.Link as={NavLink} to="/home">
-                  Home
-                </Nav.Link>
-                <Nav.Link as={NavLink} to="/services">
-                  Services
-                </Nav.Link>
-                {/* <Nav.Link as={NavLink} to="/ourProcess">
-                  Our Process
-                </Nav.Link> */}
-
-                {user.email ? (
-                  <Nav.Link className="" as={NavLink} to="/myOrders">
-                    My Orders
-                  </Nav.Link>
-                ) : (
-                  <p></p>
-                )}
-
-                {user.email ? (
-                  <Nav.Link className="" as={NavLink} to="/manageOrders">
-                    Manage Orders
-                  </Nav.Link>
-                ) : (
-                  <p></p>
-                )}
-
-                {user.email ? (
-                  <Nav.Link className="" as={NavLink} to="/orderReview">
-                    Order Review
-                  </Nav.Link>
-                ) : (
-                  <p></p>
-                )}
-                {user.email ? (
-                  <Nav.Link className="" as={NavLink} to="/addService">
-                    Add Service
-                  </Nav.Link>
-                ) : (
-                  <p></p>
-                )}
-              </Nav>
-            </div>
 
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="navigation">
+                <Nav className="navigate">
+                  <Nav.Link as={NavLink} to="/home">
+                    Home
+                  </Nav.Link>
+                  <Nav.Link as={NavLink} to="/services">
+                    Services
+                  </Nav.Link>
+                  {/* <Nav.Link as={NavLink} to="/ourProcess">
+                  Our Process
+                </Nav.Link> */}
+
+                  {user.email ? (
+                    <Nav.Link className="" as={NavLink} to="/myOrders">
+                      My Orders
+                    </Nav.Link>
+                  ) : (
+                    <p></p>
+                  )}
+
+                  {user.email ? (
+                    <Nav.Link className="" as={NavLink} to="/manageOrders">
+                      Manage Orders
+                    </Nav.Link>
+                  ) : (
+                    <p></p>
+                  )}
+
+                  {user.email ? (
+                    <Nav.Link className="" as={NavLink} to="/orderReview">
+                      Order Review
+                    </Nav.Link>
+                  ) : (
+                    <p></p>
+                  )}
+                  {user.email ? (
+                    <Nav.Link className="" as={NavLink} to="/addService">
+                      Add Service
+                    </Nav.Link>
+                  ) : (
+                    <p></p>
+                  )}
+                </Nav>
                 {user.email ? (
                   <Nav.Link className="" as={NavLink} to="" onClick={logOut}>
                     <span className="text">{user.displayName}</span> Log Out

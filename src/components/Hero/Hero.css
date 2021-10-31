@@ -10,6 +10,15 @@
   font-size: 100px;
   margin-left: -5px;
 }
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .left-text {
+    padding-top: 25%;
+  }
+  .left-text > h1 {
+    font-size: 50px;
+  }
+}
 #learn {
   margin-left: 1%;
   text-decoration: none;
