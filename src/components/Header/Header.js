@@ -1,12 +1,21 @@
 import React from "react";
 import "./Header.css";
 import { Nav, Navbar } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory, useLocation } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 
 const Header = () => {
   const { signInUsingGoogle, user, logOut } = useAuth();
-  console.log(user.email);
+
+  const history = useHistory();
+  const location = useLocation();
+  const redirect_uri = location.state?.from || "/home";
+
+  const handleGoogleSignin = () => {
+    signInUsingGoogle().then((result) => {
+      history.push(redirect_uri);
+    });
+  };
 
   return (
     <div className="container-fluid">
@@ -74,7 +83,7 @@ const Header = () => {
                     <span className="text">{user.displayName}</span> Log Out
                   </Nav.Link>
                 ) : (
-                  <button className="btn-google " onClick={signInUsingGoogle}>
+                  <button className="btn-google " onClick={handleGoogleSignin}>
                     Google Sign In
                   </button>
                 )}{" "}
