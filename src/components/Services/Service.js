@@ -4,7 +4,7 @@ import Button from "@restart/ui/esm/Button";
 import { Link } from "react-router-dom";
 
 const Service = (props) => {
-  const { name, description, img } = props.service;
+  const { _id, name, description, img } = props.service;
   return (
     <div className="col-md-4 g-5">
       <Card style={{ width: "" }}>
@@ -12,9 +12,9 @@ const Service = (props) => {
         <Card.Body>
           <Card.Title>{name}</Card.Title>
           <Card.Text>{description}</Card.Text>
-          <Link to="/login">
+          <Link to={`/booking/${_id}`}>
             <Button className="btn-google" variant="primary">
-              Order
+              Order {name.toLowerCase()}
             </Button>
           </Link>
         </Card.Body>

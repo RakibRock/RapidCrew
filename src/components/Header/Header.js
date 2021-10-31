@@ -43,6 +43,10 @@ const Header = () => {
                   Manage Orders
                 </Nav.Link>
 
+                <Nav.Link className="" as={NavLink} to="/orderReview">
+                  Order Review
+                </Nav.Link>
+
                 {user.email ? (
                   <Nav.Link className="" as={NavLink} to="/addService">
                     Add Service

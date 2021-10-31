@@ -1,0 +1,12 @@
+img {
+  height: 400px;
+}
+.about {
+  padding-top: 10%;
+}
+.about h1 {
+  font-size: 50px;
+}
+.abt-clr {
+  background-color: rgb(243, 255, 228);
+}

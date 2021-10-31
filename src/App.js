@@ -14,6 +14,8 @@ import MyOrders from "./Pages/Login/PrivateRoutes/MyOrders/MyOrders";
 import ManageOrders from "./Pages/Login/PrivateRoutes/ManageOrders/ManageOrders";
 import AddService from "./Pages/Login/PrivateRoutes/AddService/AddService";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import OrderReview from "./components/PrivateRoute/OrderReview/OrderReview";
+import Booking from "./Pages/Booking/Booking/Booking";
 
 function App() {
   return (
@@ -43,12 +45,21 @@ function App() {
               <MyOrders></MyOrders>
             </PrivateRoute>
 
-            <Route path="/manageOrders">
+            <PrivateRoute path="/manageOrders">
               <ManageOrders></ManageOrders>
-            </Route>
+            </PrivateRoute>
+
+            <PrivateRoute path="/orderReview">
+              <OrderReview></OrderReview>
+            </PrivateRoute>
+
             <Route path="/addService">
               <AddService></AddService>
             </Route>
+
+            <PrivateRoute path="/booking/:serviceId">
+              <Booking></Booking>
+            </PrivateRoute>
 
             <Route path="/login">
               <Login></Login>
