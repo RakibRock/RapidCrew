@@ -9,7 +9,12 @@ const About = () => {
           <div className="col-md-6 pt-5">
             <div className="about ">
               <h1>About Us</h1>
-              <p>We are the fastest courier delivery service in Bangladesh.</p>
+              <p>
+                We are the fastest courier delivery service in Bangladesh. We
+                have 6 special packages to choose from. Each package is targeted
+                for special people according to teir needs. Our main aim is to
+                provide people high quality service they have been looking for.
+              </p>
             </div>
           </div>
           <div className="col-md-6 image img-fluid pt-5">
