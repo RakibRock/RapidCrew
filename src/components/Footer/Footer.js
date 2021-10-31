@@ -6,7 +6,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div>
-      <div className="container-fluid bg-color">
+      <div className="container-fluid ft-color">
         <div className="row mt-5">
           <div className="col-md-4 p-5 left-text">
             <h2>
