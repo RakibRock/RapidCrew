@@ -38,13 +38,13 @@ function App() {
               <Register></Register>
             </Route>
 
-            <Route path="/ourProcess">
-              <OurProcess></OurProcess>
-            </Route>
-
             <PrivateRoute path="/myOrders">
               <MyOrders></MyOrders>
             </PrivateRoute>
+
+            <Route path="/addService">
+              <AddService></AddService>
+            </Route>
 
             <Route path="/manageServices">
               <ManageServices></ManageServices>
@@ -53,10 +53,6 @@ function App() {
             <PrivateRoute path="/orderReview">
               <OrderReview></OrderReview>
             </PrivateRoute>
-
-            <Route path="/addService">
-              <AddService></AddService>
-            </Route>
 
             <PrivateRoute path="/booking/:serviceId">
               <Booking></Booking>

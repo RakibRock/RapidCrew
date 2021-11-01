@@ -56,6 +56,14 @@ const Header = () => {
                   )}
 
                   {user.email ? (
+                    <Nav.Link className="" as={NavLink} to="/addService">
+                      Add Service
+                    </Nav.Link>
+                  ) : (
+                    <p></p>
+                  )}
+
+                  {user.email ? (
                     <Nav.Link className="" as={NavLink} to="/manageOrders">
                       Manage Orders
                     </Nav.Link>
@@ -66,13 +74,6 @@ const Header = () => {
                   {user.email ? (
                     <Nav.Link className="" as={NavLink} to="/orderReview">
                       Order Review
-                    </Nav.Link>
-                  ) : (
-                    <p></p>
-                  )}
-                  {user.email ? (
-                    <Nav.Link className="" as={NavLink} to="/addService">
-                      Add Service
                     </Nav.Link>
                   ) : (
                     <p></p>
