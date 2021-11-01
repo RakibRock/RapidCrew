@@ -18,6 +18,7 @@ This is a courier delivery website with six different services in the offering.
 * After signing in, the user will be able to see more options like, My Orders, Order Management, etc. 
 * I have kept google sign in for now as the only way to log in to the website. 
 * After going to the specific service, if the user wants to order that service, then he/she has to provide some extra details like his address and phone number. 
+* User will be able to add service to the services section from the Add Services page.
 * User will be able to delete services only after logging in
 
 
