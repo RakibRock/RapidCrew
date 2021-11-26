@@ -54,7 +54,7 @@ const Booking = () => {
                 {...register("age", { min: 18, max: 99 })}
               />
               <br />
-
+              {/* submit btn */}
               <input className="btn-google " type="submit" />
               <p>Click to Book</p>
             </form>

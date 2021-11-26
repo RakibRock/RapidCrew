@@ -8,6 +8,8 @@ const Service = (props) => {
   const { user } = useAuth();
 
   const { _id, name, description, img } = props.service;
+  //Delete a service
+  const handleDeleteService = (id) => {};
   return (
     <div className="col-md-4 g-5">
       <Card style={{ height: "" }}>

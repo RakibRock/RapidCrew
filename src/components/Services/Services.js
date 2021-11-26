@@ -4,11 +4,13 @@ import Service from "./Service";
 const Services = () => {
   const [services, setServices] = useState([]);
 
+  //GET
   useEffect(() => {
     fetch("https://possessed-caverns-85625.herokuapp.com/services")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
+
   return (
     <div>
       <div className="container">

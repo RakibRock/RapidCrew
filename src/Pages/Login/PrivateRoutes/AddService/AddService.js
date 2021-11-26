@@ -11,7 +11,7 @@ const AddService = () => {
     const newService = { name, description };
 
     //POST
-    fetch("http://localhost:5000/services", {
+    fetch("https://possessed-caverns-85625.herokuapp.com/services", {
       method: "POST",
       headers: {
         "content-type": "application/json",

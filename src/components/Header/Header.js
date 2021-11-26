@@ -47,36 +47,28 @@ const Header = () => {
                   Our Process
                 </Nav.Link> */}
 
-                  {user.email ? (
+                  {user.email && (
                     <Nav.Link className="" as={NavLink} to="/myOrders">
                       My Orders
                     </Nav.Link>
-                  ) : (
-                    <p></p>
                   )}
 
-                  {user.email ? (
+                  {user.email && (
                     <Nav.Link className="" as={NavLink} to="/addService">
                       Add Service
                     </Nav.Link>
-                  ) : (
-                    <p></p>
                   )}
 
-                  {user.email ? (
-                    <Nav.Link className="" as={NavLink} to="/manageOrders">
+                  {user.email && (
+                    <Nav.Link className="" as={NavLink} to="/manageServices">
                       Manage Orders
                     </Nav.Link>
-                  ) : (
-                    <p></p>
                   )}
 
-                  {user.email ? (
+                  {user.email && (
                     <Nav.Link className="" as={NavLink} to="/orderReview">
                       Order Review
                     </Nav.Link>
-                  ) : (
-                    <p></p>
                   )}
                 </Nav>
                 {user.email ? (
